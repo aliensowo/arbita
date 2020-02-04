@@ -1,0 +1,39 @@
+.diagram {
+	
+	&_item {
+		position: relative;
+		padding-bottom: 80px;
+		font-size: 30px;
+		font-weight: 600;
+		text-align: center;
+		
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 5px;
+			width: 13px;
+			height: 71px;
+			margin: auto;
+			background: url("../img/diagram-line.png") center no-repeat;
+		}
+		
+		&:last-child {
+			padding-bottom: 0;
+			
+			&:after {
+				display: none;
+			}
+		}
+	}
+	
+	
+	@media (max-width: $screen-xs) {
+		
+		&_item {
+			font-size: 22px;
+			line-height: 30px;
+		}
+	}
+}

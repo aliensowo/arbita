@@ -1,0 +1,35 @@
+.logo {
+	display: inline-flex;
+	align-items: flex-end;
+	
+	&_title {
+		margin-right: 13px;
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 55px;
+	}
+	
+	&_subtitle {
+		margin-bottom: 11px;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 16px;
+	}
+	
+	&:hover {
+		text-decoration: none;
+	}
+	
+	@media (max-width: $screen-xs) {
+		
+		&_title {
+			margin-right: 9px;
+			font-size: 27px;
+			line-height: 34px;
+		}
+		
+		&_subtitle {
+			margin-bottom: 4px;
+		}
+	}
+}

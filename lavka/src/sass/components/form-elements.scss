@@ -1,0 +1,287 @@
+.btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	cursor: pointer;
+	transition: .3s;
+	
+	&:hover {
+		text-decoration: none;
+	}
+	
+	&:focus,
+	&:active {
+		outline: none;
+	}
+	
+	&--blue {
+		height: 42px;
+		padding: 0 15px;
+		color: #fff;
+		font-size: 18px;
+		font-weight: 600;
+		background-color: #5e59f8;
+		border-radius: 5px;
+		
+		&:hover {
+			background-color: darken(#5e59f8, 5%);
+		}
+		
+		&:focus,
+		&:active {
+			background-color: darken(#5e59f8, 15%);
+		}
+	}
+	
+	&--white {
+		height: 42px;
+		padding: 0 15px;
+		color: #000;
+		font-size: 18px;
+		font-weight: 600;
+		background-color: #fff;
+		border-radius: 5px;
+		
+		&:hover {
+			background-color: darken(#fff, 5%);
+		}
+		
+		&:focus,
+		&:active {
+			background-color: darken(#fff, 15%);
+		}
+	}
+	
+	&--card {
+		position: relative;
+		height: 49px;
+		padding-left: 25px;
+		padding-right: 90px;
+		border-radius: 13px;
+		
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 15px;
+			bottom: 0;
+			width: 31px;
+			height: 30px;
+			margin: auto;
+			background: url("../img/icons/icon-cart.svg") center no-repeat;
+		}
+		
+	}
+	
+	&--arrow {
+		position: relative;
+		height: 49px;
+		padding-left: 25px;
+		padding-right: 70px;
+		border-radius: 13px;
+		
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 15px;
+			bottom: 0;
+			width: 35px;
+			height: 21px;
+			margin: auto;
+			background: url("../img/btn-arrow.svg") center no-repeat;
+		}
+	}
+	
+	&--arrow-black {
+		position: relative;
+		height: 49px;
+		padding-left: 30px;
+		padding-right: 120px;
+		border-radius: 13px;
+		
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 25px;
+			bottom: 0;
+			width: 34px;
+			height: 20px;
+			margin: auto;
+			background: url("../img/btn-arrow-black.png") center no-repeat;
+		}
+	}
+	
+	@media (max-width: $screen-xs) {
+		
+		&--blue {
+			height: 35px;
+			padding: 0 10px;
+			font-size: 14px;
+		}
+		
+		&--white {
+			height: 35px;
+			padding: 0 10px;
+			font-size: 14px;
+		}
+		
+		&--card {
+			height: 40px;
+			padding-left: 15px;
+			padding-right: 70px;
+			
+			&:after {
+				width: 26px;
+				height: 25px;
+				right: 15px;
+				background-size: cover;
+			}
+		}
+		
+		&--arrow,
+		&--arrow-black {
+			height: 40px;
+			padding-left: 15px;
+			padding-right: 70px;
+			
+			&:after {
+				width: 26px;
+				height: 15px;
+				background-size: cover;
+			}
+		}
+	}
+}
+
+.form {
+	
+	&_label {
+		display: inline-block;
+		margin: 0;
+	}
+	
+	&_input {
+		display: inline-flex;
+		align-items: center;
+		width: 100%;
+		max-width: 100%;
+		min-width: 360px;
+		height: 47px;
+		padding-left: 20px;
+		color: #000;
+		font-weight: 300;
+		background-color: #fff;
+		border: 1px solid #e2e5ed;
+		border-radius: 4px;
+		
+		&::placeholder {
+			color: #b5b5b5;
+		}
+	}
+	
+	&_textarea {
+		width: 100%;
+		max-width: 450px;
+		height: 195px;
+		padding-top: 11px;
+		padding-left: 20px;
+		color: #000;
+		font-weight: 300;
+		background-color: #fff;
+		border: 1px solid #e2e5ed;
+		border-radius: 4px;
+		resize: none;
+		
+		&::placeholder {
+			color: #b5b5b5;
+		}
+	}
+	
+	&_radio {
+		display: flex;
+		align-items: center;
+		margin: 0;
+		cursor: pointer;
+		
+		&__input {
+			display: none;
+			
+			&:checked ~ .form_radio__value:before {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+		
+		&__value {
+			position: relative;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin-right: 13px;
+			background-color: #fff;
+			border: 1px solid #e2e5ed;
+			border-radius: 100%;
+			
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				width: 14px;
+				height: 14px;
+				margin: auto;
+				background-color: #5e59f8;
+				border-radius: 100%;
+				opacity: 0;
+				visibility: hidden;
+				transition: .3s ease;
+			}
+		}
+		
+		&__title {
+			line-height: 22px;
+		}
+	}
+	
+	@media (max-width: $screen-sm) {
+		
+		&_label {
+			display: block;
+			max-width: 360px;
+			width: 100%;
+		}
+		
+		&_input,
+		&_textarea {
+			max-width: 360px;
+			width: 100%;
+			min-width: auto;
+			padding-left: 15px;
+			font-size: 14px;
+		}
+		
+		&_input {
+			height: 40px;
+		}
+		
+		&_textarea {
+			height: 90px;
+		}
+	}
+	
+	@media (max-width: $screen-xs) {
+	
+		&_radio {
+			
+			&__title {
+				font-size: 14px;
+				line-height: 18px;
+			}
+		}
+	}
+}
