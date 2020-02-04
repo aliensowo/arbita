@@ -7,6 +7,14 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+venv/
+.idea/
+lavka/.idea
+lavka/.gitignore
+lavka/gulpfile.js
+lavka/package.json
+lavka/package-lock.json
+lavka/readme.md
 .Python
 build/
 develop-eggs/
