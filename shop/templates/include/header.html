@@ -1,0 +1,126 @@
+{% load static %}
+    <!-- Header -->
+    <header class="site_header">
+        <div class="container">
+            <div class="site_header__inner">
+                <a href="/" class="site_header__logo logo">
+                        <span class="logo_title">
+                            Лавка
+                        </span>
+                    <span class="logo_subtitle">
+                            by Gost Target
+                        </span>
+                </a>
+                <nav class="site_header__nav nav">
+                    <div class="nav_btn" id="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="nav_list">
+                        <div class="nav_item submenu ">
+                            <a role="button" class="nav_item__link">
+                                Другое
+                            </a>
+                            <div class="submenu_block">
+                                <a href="{% url 'index_site:site1_10' %}" class="submenu_item">
+                                    <div class="submenu_item__title">
+                                        Софт по уника <br/>
+                                        -лизации крео
+                                    </div>
+                                    <div class="submenu_item__img">
+                                        <img src="{% static 'img/soft.svg' %}" alt="soft">
+                                    </div>
+                                </a>
+                                <a href="{% url 'index_site:site1_9' %}" class="submenu_item">
+                                    <div class="submenu_item__title">
+                                        Рабочие <br/>
+                                        связки
+                                    </div>
+                                    <div class="submenu_item__img">
+                                        <img src="{% static 'img/combination.svg' %}" alt="combination">
+                                    </div>
+                                </a>
+                                <a href="{% url 'index_site:site1_8' %}" class="submenu_item">
+                                    <div class="submenu_item__title">
+                                        Промокоды на <br/>
+                                        софт/сайты
+                                    </div>
+                                    <div class="submenu_item__img">
+                                        <img src="{% static 'img/promo.svg' %}" alt="promo">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="nav_item submenu ">
+                            <a role="button" class="nav_item__link">
+                                Эксклюзив
+                            </a>
+                            <div class="submenu_block">
+                                <a href="{% url 'index_site:site1_6' %}" class="submenu_item">
+                                    <div class="submenu_item__title">
+                                        Приватные <br/>
+                                        офферы
+                                    </div>
+                                    <div class="submenu_item__img">
+                                        <img src="{% static 'img/unlock.svg' %}" alt="unlock">
+                                    </div>
+                                </a>
+                                <a href="{% url 'index_site:site1_7' %}" class="submenu_item">
+                                    <div class="submenu_item__title">
+                                        Прямые <br/>
+                                        Рекламодатели
+                                    </div>
+                                    <div class="submenu_item__img">
+                                        <img src="{% static 'img/dialog.svg' %}" alt="dialog">
+                                    </div>
+                                </a>
+                                <a href="{% url 'index_site:site1_13' %}" class="submenu_item">
+                                    <div class="submenu_item__title">
+                                        Помощь с доступом <br/>
+                                        в приватные ПП
+                                    </div>
+                                    <div class="submenu_item__img">
+                                        <img src="{% static 'img/door.svg' %}" alt="door">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="nav_item submenu nav-work-us ">
+                            <a role="button" class="nav_item__link">
+                                Работа с нами
+                            </a>
+                            <div class="submenu_block">
+                                <a href="#" class="submenu_item">
+                                    <div class="submenu_item__title">
+                                        Платная консультация
+                                    </div>
+                                </a>
+                                <a href="#" class="submenu_item">
+                                    <div class="submenu_item__title">
+                                        Услуги агенства
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="site_header__info">
+                    <div class="site_header__work-us work-us">
+                        <div class="work-us_title">
+                            Работа с нами
+                        </div>
+                        <div class="work-us_list">
+                            <a href="{% url 'index_site:site1_16' %}" class="work-us_item">
+                                Платная консультация
+                            </a>
+                            <a href="{% url 'index_site:site1_15' %}" class="work-us_item">
+                                Услуги агенства
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /Header -->

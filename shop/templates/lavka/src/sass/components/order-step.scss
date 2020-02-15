@@ -1,0 +1,16 @@
+.order-step {
+	display: none;
+	min-height: 545px;
+	
+	&.is-active {
+		display: block;
+	}
+	
+	@media (max-width: $screen-md) {
+		min-height: 500px;
+	}
+	
+	@media (max-width: $screen-sm) {
+		min-height: auto;
+	}
+}

@@ -1,0 +1,296 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Лавка</title>
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="site">
+
+<div class="site_wrap">
+
+    <!-- Header -->
+    {% include 'include/header.html' %}
+    <!-- /Header -->
+
+    <!-- Main content -->
+    <main class="site_main">
+
+        <!-- Intro -->
+        <section class="sec-intro">
+            <div class="container container--md">
+                <div class="sec-intro_inner">
+                    <div class="sec-intro_left">
+                        <div class="sec-intro_title">
+                            Промокоды
+                        </div>
+                        <div class="sec-intro_description">
+                            Т.к. мы в арбитраже не первый год,
+                            мы находимся в партнерских отношениях со многими сервисами,
+                            которые нужны арбитражникам всегда.
+                            (антидетектд браузеры, прокси, трекеры, tds и spy сервисы).
+                        </div>
+                    </div>
+                    <div class="sec-intro_right">
+                        <div class="offers offers--category">
+                            <div class="offers_block">
+                                <div class="offers_title">
+                                    Категория
+                                </div>
+                                <div class="offers_list">
+                                    <div class="offers_item no-bg">
+                                        <div class="offers_item__inner">
+                                            <div class="offers_item__icon">
+                                            </div>
+                                            <div class="offers_item__title">
+                                                Компания
+                                            </div>
+                                            <div class="offers_item__action">
+                                                <a href="#" class="btn btn--blue modal-link" data-modal="modal-company">
+                                                    Купить
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="offers_item no-bg">
+                                        <div class="offers_item__inner">
+                                            <div class="offers_item__icon">
+                                            </div>
+                                            <div class="offers_item__title">
+                                                Компания
+                                            </div>
+                                            <div class="offers_item__action">
+                                                <a href="#" class="btn btn--blue modal-link" data-modal="modal-company">
+                                                    Купить
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="offers_block">
+                                <div class="offers_title">
+                                    Категория
+                                </div>
+                                <div class="offers_list">
+                                    <div class="offers_item no-bg">
+                                        <div class="offers_item__inner">
+                                            <div class="offers_item__icon">
+                                            </div>
+                                            <div class="offers_item__title">
+                                                Компания
+                                            </div>
+                                            <div class="offers_item__action">
+                                                <a href="#" class="btn btn--blue modal-link" data-modal="modal-company">
+                                                    Купить
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="offers_item no-bg">
+                                        <div class="offers_item__inner">
+                                            <div class="offers_item__icon">
+                                            </div>
+                                            <div class="offers_item__title">
+                                                Компания
+                                            </div>
+                                            <div class="offers_item__action">
+                                                <a href="#" class="btn btn--blue modal-link" data-modal="modal-company">
+                                                    Купить
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="offers_item no-bg">
+                                        <div class="offers_item__inner">
+                                            <div class="offers_item__icon">
+                                            </div>
+                                            <div class="offers_item__title">
+                                                Компания
+                                            </div>
+                                            <div class="offers_item__action">
+                                                <a href="#" class="btn btn--blue modal-link" data-modal="modal-company">
+                                                    Купить
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Intro -->
+
+    </main>
+    <!-- /Main content -->
+
+</div>
+
+<div class="modal modal-order" id="modal-company">
+    <div class="modal_inner">
+        <a role="button" class="modal_close">
+            <i class="icon-close"></i>
+        </a>
+        <div class="modal_content">
+            <div class="modal_steps">
+                <div class="modal_steps__title">
+                    Шаг <span class="modal_steps__number"></span>
+                </div>
+                <div class="modal_steps__items">
+                    <i class="modal_steps__items-value" data-order-step="1"></i>
+                    <i class="modal_steps__items-value" data-order-step="2"></i>
+                    <i class="modal_steps__items-value" data-order-step="3"></i>
+                </div>
+            </div>
+            <div class="modal_order order">
+                <div class="order-product order-step" data-order-step="1">
+                    <div class="order-product_inner">
+                        <div class="order-product_left order-product_left--border">
+                            <div class="order-product_info">
+                                <div class="order-product_title">
+                                    Компания
+                                </div>
+                                <div class="order-product_description">
+                                    Вообще я принципиально не хотел писать тз, что бы у каждого была свобода действий,
+                                    что в дизайне, что в текстах, что в структуре сайта,
+                                    потому что я думаю что стандартный принцип работы магазина и его структура понятна всем,
+                                    и если накидаю ее макет, то вы там не увидите ничего нового или экспериментального
+                                </div>
+                                <div class="order-product_value">
+                                    <div class="order-product_value__quantity quantity-block">
+                                        <div class="quantity-block_list">
+                                            <div class="quantity-block_item">
+                                                <div class="quantity-block_item__title">
+                                                    Штук
+                                                </div>
+                                                <div class="quantity-block_item__info">
+                                                    <a role="button" class="quantity-block_item__arrow quantity-sub"></a>
+                                                    <input type="text" class="quantity-block_item__field quantity-field" value="12" disabled>
+                                                    <a role="button" class="quantity-block_item__arrow quantity-add"></a>
+                                                </div>
+                                            </div>
+                                            <div class="quantity-block_item">
+                                                <div class="quantity-block_item__title">
+                                                    Акк-ов
+                                                </div>
+                                                <div class="quantity-block_item__subtitle">
+                                                    (в рекл. кабинете*)
+                                                </div>
+                                                <div class="quantity-block_item__info">
+                                                    <a role="button" class="quantity-block_item__arrow quantity-sub"></a>
+                                                    <input type="text" class="quantity-block_item__field quantity-field" value="12" disabled>
+                                                    <a role="button" class="quantity-block_item__arrow quantity-add"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-product_price">
+                                    <div class="order-product_price__title">
+                                        Цена:
+                                    </div>
+                                    <div class="order-product_price__value">
+                                        1'500руб
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-product_action">
+                                <button class="order-product_btn btn btn--blue btn--card">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-data order-step" data-order-step="2">
+                    <div class="order-data_form form">
+                        <div class="order-data_item">
+                            <div class="order-data_item__title">
+                                Укажите ваши данные
+                            </div>
+                            <div class="order-data_item__info">
+                                <label class="form_label">
+                                    <input type="email" class="form_input" placeholder="Ваш email">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="order-data_item">
+                            <div class="order-data_item__title">
+                                Способ оплаты
+                            </div>
+                            <div class="order-data_item__info">
+                                <label class="form_radio">
+                                    <input type="radio" name="payment-type-bm" class="form_radio__input" checked>
+                                    <span class="form_radio__value"></span>
+                                    <span class="form_radio__title">Банковская карта</span>
+                                </label>
+                                <label class="form_radio">
+                                    <input type="radio" name="payment-type-bm" class="form_radio__input">
+                                    <span class="form_radio__value"></span>
+                                    <span class="form_radio__title">Яндекс.Деньги</span>
+                                </label>
+                                <label class="form_radio">
+                                    <input type="radio" name="payment-type-bm" class="form_radio__input">
+                                    <span class="form_radio__value"></span>
+                                    <span class="form_radio__title">Вариант 3</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="order-data_action">
+                            <button class="order-product_btn btn btn--blue btn--arrow">
+                                Подтвердить покупку
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-success order-step" data-order-step="3">
+                    <div class="order-success_inner">
+                        <div class="order-success_info">
+                            <div class="order-success_title">
+                                Успешная покупка!
+                            </div>
+                            <div class="order-success_description">
+                                Вообще я принципиально не хотел писать тз,
+                                что бы у каждого была свобода действий,
+                                что в дизайне, что в текстах, что в структуре сайта,
+                                потому что я думаю что стандартный принцип работы магазина и его структура понятна
+                            </div>
+                        </div>
+                        <div class="order-success_check">
+                            <img src="{% static 'img/check.svg' %}" alt="check">
+                        </div>
+                    </div>
+                    <div class="order-success_products">
+                        <div class="order-success_products__title">
+                            Посмотрите, что еще у нас есть:
+                        </div>
+                        <div class="order-success_products__slider success-slider">
+                            <div class="success-slider_slider">
+                                <div class="success-slider_slide">
+                                    <img src="http://via.placeholder.com/450x155" alt="product">
+                                </div>
+                                <div class="success-slider_slide">
+                                    <img src="http://via.placeholder.com/450x155" alt="product">
+                                </div>
+                                <div class="success-slider_slide">
+                                    <img src="http://via.placeholder.com/450x155" alt="product">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="{% static 'js/script.min.js' %}"></script>
+</body>
+</html>

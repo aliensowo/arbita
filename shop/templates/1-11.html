@@ -1,0 +1,233 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Лавка</title>
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="site">
+
+<div class="site_wrap">
+
+    <!-- Header -->
+    {% include 'include/header.html' %}
+    <!-- /Header -->
+
+    <!-- Main content -->
+    <main class="site_main">
+
+        <!-- Product -->
+        <section class="sec-products">
+            <div class="container container--xs">
+                <div class="sec-products_inner">
+                    <div class="products">
+                        <div class="products_item">
+                            <div class="products_item__title">
+                                Сборка антидетект
+                                браузера
+                            </div>
+                            <div class="products_item__description">
+                                Вообще я принципиально не хотел писать тз, что бы у каждого была свобода действий,
+                                что в дизайне, что в текстах, что в структуре сайта,
+                                потому что я думаю что стандартный принцип работы магазина и его структура понятна всем,
+                                и если накидаю ее макет, то вы там не увидите ничего нового или экспериментального
+                            </div>
+                            <div class="products_item__images">
+                                <div class="products_item__images-card">
+                                </div>
+                                <div class="products_item__images-card">
+                                </div>
+                                <div class="products_item__images-card">
+                                </div>
+                                <div class="products_item__images-card">
+                                </div>
+                            </div>
+                            <div class="products_item__description">
+                                Вообще я принципиально не хотел писать тз, что бы у каждого была свобода действий,
+                                что в дизайне, что в текстах, что в структуре сайта,
+                                потому что я думаю что стандартный принцип работы магазина и его структура понятна всем,
+                                и если накидаю ее макет, то вы там не увидите ничего нового или экспериментального
+                            </div>
+                            <div class="products_item__price">
+                                <div class="products_item__price-title">
+                                    Цена:
+                                </div>
+                                <div class="products_item__price-value">
+                                    1'500руб
+                                </div>
+                            </div>
+                            <div class="products_item__action">
+                                <button class="btn btn--blue btn--card modal-link" data-modal="modal-union-browser">
+                                    Купить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Product -->
+
+    </main>
+    <!-- /Main content -->
+
+</div>
+
+<div class="modal modal-order" id="modal-union-browser">
+    <div class="modal_inner">
+        <a role="button" class="modal_close">
+            <i class="icon-close"></i>
+        </a>
+        <div class="modal_content">
+            <div class="modal_steps">
+                <div class="modal_steps__title">
+                    Шаг <span class="modal_steps__number"></span>
+                </div>
+                <div class="modal_steps__items">
+                    <i class="modal_steps__items-value" data-order-step="1"></i>
+                    <i class="modal_steps__items-value" data-order-step="2"></i>
+                    <i class="modal_steps__items-value" data-order-step="3"></i>
+                </div>
+            </div>
+            <div class="modal_order order">
+                <div class="order-product order-step" data-order-step="1">
+                    <div class="order-product_inner">
+                        <div class="order-product_left">
+                            <div class="order-product_title">
+                                Сборка антидетект браузера
+                            </div>
+                            <div class="order-product_description">
+                                Вообще я принципиально не хотел писать тз, что бы у каждого была свобода действий,
+                                что в дизайне, что в текстах, что в структуре сайта,
+                                потому что я думаю что стандартный принцип работы магазина и его структура понятна всем,
+                                и если накидаю ее макет, то вы там не увидите ничего нового или экспериментального
+                            </div>
+                            <div class="order-product_form form">
+                                <div class="order-product_form__title">
+                                    Заполните заявку
+                                </div>
+                                <label class="form_label">
+                                    <input type="email" class="form_input" placeholder="Ваш email">
+                                </label>
+                                <label class="form_label">
+                                    <input type="text" class="form_input" placeholder="Ваш телефон / ник">
+                                </label>
+                                <div class="social-radio">
+                                    <div class="social-radio_list">
+                                        <label class="social-radio_item">
+                                            <input type="radio" name="social-product1" class="social-radio_item__input" checked>
+                                            <span class="social-radio_item__value"></span>
+                                            <span class="social-radio_item__icon">
+                                                    <i class="icon-whatsapp"></i>
+                                                </span>
+                                        </label>
+                                        <label class="social-radio_item">
+                                            <input type="radio" name="social-product1" class="social-radio_item__input">
+                                            <span class="social-radio_item__value"></span>
+                                            <span class="social-radio_item__icon">
+                                                    <i class="icon-telegram"></i>
+                                                </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-product_price">
+                                <div class="order-product_price__title">
+                                    Цена:
+                                </div>
+                                <div class="order-product_price__value">
+                                    1'500руб
+                                </div>
+                            </div>
+                            <div class="order-product_action">
+                                <button class="order-product_btn btn btn--blue btn--card">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-data order-step" data-order-step="2">
+                    <div class="order-data_form form">
+                        <div class="order-data_item">
+                            <div class="order-data_item__title">
+                                Способ оплаты
+                            </div>
+                            <div class="order-data_item__info">
+                                <label class="form_radio">
+                                    <input type="radio" name="payment-type-product1" class="form_radio__input" checked>
+                                    <span class="form_radio__value"></span>
+                                    <span class="form_radio__title">Банковская карта</span>
+                                </label>
+                                <label class="form_radio">
+                                    <input type="radio" name="payment-type-product1" class="form_radio__input">
+                                    <span class="form_radio__value"></span>
+                                    <span class="form_radio__title">Яндекс.Деньги</span>
+                                </label>
+                                <label class="form_radio">
+                                    <input type="radio" name="payment-type-product1" class="form_radio__input">
+                                    <span class="form_radio__value"></span>
+                                    <span class="form_radio__title">Вариант 3</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="order-data_item">
+                            <div class="order-data_item__title">
+                                Данные карты
+                            </div>
+                        </div>
+                        <div class="order-data_action">
+                            <button class="order-product_btn btn btn--blue btn--arrow">
+                                Подтвердить покупку
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-success order-step" data-order-step="3">
+                    <div class="order-success_inner">
+                        <div class="order-success_info">
+                            <div class="order-success_title">
+                                Успешная покупка!
+                            </div>
+                            <div class="order-success_description">
+                                Вообще я принципиально не хотел писать тз,
+                                что бы у каждого была свобода действий,
+                                что в дизайне, что в текстах, что в структуре сайта,
+                                потому что я думаю что стандартный принцип работы магазина и его структура понятна
+                            </div>
+                        </div>
+                        <div class="order-success_check">
+                            <img src="{% static 'img/check.svg' %}" alt="check">
+                        </div>
+                    </div>
+                    <div class="order-success_products">
+                        <div class="order-success_products__title">
+                            Посмотрите, что еще у нас есть:
+                        </div>
+                        <div class="order-success_products__slider success-slider">
+                            <div class="success-slider_slider">
+                                <div class="success-slider_slide">
+                                    <img src="http://via.placeholder.com/450x155" alt="product">
+                                </div>
+                                <div class="success-slider_slide">
+                                    <img src="http://via.placeholder.com/450x155" alt="product">
+                                </div>
+                                <div class="success-slider_slide">
+                                    <img src="http://via.placeholder.com/450x155" alt="product">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="{% static 'js/script.min.js' %}"></script>
+</body>
+</html>

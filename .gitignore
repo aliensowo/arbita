@@ -7,6 +7,8 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+shop/templates/lavka/.idea
+shop/templates/lavka/node_modules
 venv/
 .idea/
 lavka/.idea

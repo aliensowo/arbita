@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Лавка</title>
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+</head>
+<body class="site">
+
+<div class="site_wrap">
+
+    <!-- Header -->
+    {% include 'include/header.html' %}
+    <!-- /Header -->
+
+    <!-- Main content -->
+    <main class="site_main">
+
+        <!-- Services -->
+       <section class="sec-services">
+           <div class="container">
+               <div class="sec-services_head">
+                   <div class="sec-services_title">
+                       Товары для <br/>
+                       Арбитража
+                   </div>
+               </div>
+               <div class="sec-services_info services">
+                   <div class="services_list">
+                       <div class="services_card big-card bg-offer">
+                            <div class="services_card__inner">
+                                <div class="services_card__info">
+                                    <div class="services_card__title">
+                                        Приватные офферы
+                                    </div>
+                                    <div class="services_card__description">
+                                        В ассортимент нашего магазина входит доступ к приватным офферам.
+                                        Тебе не придется лить на выжитые офферы, вроде похудалок.
+                                        У нас найдёшь только те офферы,
+                                        которые только зашли на рынок и недоступны обычным байерам
+                                    </div>
+                                </div>
+                                <div class="services_card__action">
+                                    <button class="btn btn--white btn--arrow-black"><a href="{% url 'index_site:site1_6' %}">Смотреть</a></button>
+                                </div>
+                            </div>
+                       </div>
+                       <div class="services_card bg-union-browser">
+                           <div class="services_card__inner">
+                               <div class="services_card__info">
+                                   <div class="services_card__title">
+                                       Сборка анти-детект
+                                       браузера
+                                   </div>
+                               </div>
+                               <div class="services_card__action">
+                                   <div class="services_card__action">
+                                       <button class="btn btn--white btn--arrow-black"><a href="{% url 'index_site:site1_11' %}">Смотреть</a></button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="services_card bg-acc-fb" href="{% url 'index_site:site1_1' %}">
+                           <div class="services_card__inner" href="{% url 'index_site:site1_1' %}">
+                               <div class="services_card__info">
+                                   <div class="services_card__title">
+                                       Аккаунты Facebook
+                                   </div>
+                               </div>
+                               <div class="services_card__action">
+                                   <div class="services_card__action">
+                                       <button class="btn btn--white btn--arrow-black"><a href="{% url 'index_site:site1_1' %}">Смотреть</a></button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+        <!-- /Services -->
+
+    </main>
+    <!-- /Main content -->
+</div>
+
+<!-- Scripts -->
+<script src="{% static 'js/script.min.js' %}"></script>
+</body>
+</html>

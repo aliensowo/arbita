@@ -1,0 +1,68 @@
+.social-radio {
+
+	&_list {
+		display: flex;
+		align-items: center;
+	}
+	
+	&_item {
+		display: inline-flex;
+		align-items: center;
+		margin-right: 45px;
+		margin-bottom: 0;
+		cursor: pointer;
+		
+		&__input {
+			display: none;
+			
+			&:checked ~ .social-radio_item__value:before {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+		
+		&__value {
+			position: relative;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin-right: 13px;
+			background-color: #fff;
+			border: 1px solid #e2e5ed;
+			border-radius: 100%;
+			
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				width: 14px;
+				height: 14px;
+				margin: auto;
+				background-color: #5e59f8;
+				border-radius: 100%;
+				opacity: 0;
+				visibility: hidden;
+				transition: .3s ease;
+			}
+		}
+	}
+	
+	@media (max-width: $screen-sm) {
+	
+		&_item {
+			margin-right: 30px;
+			
+			&__icon {
+				
+				i {
+					width: 30px;
+					height: 30px;
+					background-size: cover;
+				}
+			}
+		}
+	}
+}

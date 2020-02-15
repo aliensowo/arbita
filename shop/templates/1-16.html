@@ -1,0 +1,72 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Лавка</title>
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="site">
+
+<div class="site_wrap">
+
+    <!-- Header -->
+    {% include 'include/header.html' %}
+    <!-- /Header -->
+
+    <!-- Main content -->
+    <main class="site_main">
+
+        <!-- Consultation -->
+        <section class="sec-consultation">
+            <div class="container container--md">
+                <div class="sec-consultation_inner">
+                    <div class="sec-consultation_info">
+                        <div class="sec-consultation_description">
+                            <div class="sec-consultation_title">
+                                Платная
+                                консультация
+                            </div>
+                            <div class="sec-consultation_text">
+                                Не нужно полное обучение, но в определенном месте возникли трудности?
+                                Платная консультация - выше решение.
+                                <span class="bolder">Поможем в решении Вашей проблемы</span> от начала и до конца.
+                            </div>
+                        </div>
+                        <div class="sec-consultation_diagram diagram">
+                            <div class="diagram_list">
+                                <div class="diagram_item">
+                                    Созвон в Skype
+                                </div>
+                                <div class="diagram_item">
+                                    Подключение к <br/>
+                                    Вашему компьютеру
+                                </div>
+                                <div class="diagram_item">
+                                    Консультация <br/>
+                                    в чате
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec-consultation_images">
+                        <div class="sec-consultation_images__item"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Consultation -->
+
+    </main>
+    <!-- /Main content -->
+
+</div>
+
+<!-- Scripts -->
+<script src="{% static 'js/script.min.js' %}"></script>
+</body>
+</html>

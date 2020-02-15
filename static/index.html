@@ -1,0 +1,219 @@
+
+{% load static %}
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Лавка</title>
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+</head>
+<body class="site">
+
+<div class="site_wrap">
+
+    <!-- Header -->
+    <header class="site_header">
+        <div class="container">
+            <div class="site_header__inner">
+                <a href="/" class="site_header__logo logo">
+                        <span class="logo_title">
+                            Лавка
+                        </span>
+                    <span class="logo_subtitle">
+                            by Gost Target
+                        </span>
+                </a>
+                <nav class="site_header__nav nav">
+                    <div class="nav_btn" id="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="nav_list">
+                        <div class="nav_item submenu ">
+                            <a role="button" class="nav_item__link">
+                                Другое
+                            </a>
+                            <div class="submenu_block">
+                                <a href="#" class="submenu_item">
+                                    <div class="submenu_item__title">
+                                        Софт по уника <br/>
+                                        -лизации крео
+                                    </div>
+                                    <div class="submenu_item__img">
+                                        <img src="{% static 'img/soft.svg' %}" alt="soft">
+                                    </div>
+                                </a>
+                                <a href="#" class="submenu_item">
+                                    <div class="submenu_item__title">
+                                        Рабочие <br/>
+                                        связки
+                                    </div>
+                                    <div class="submenu_item__img">
+                                        <img src="{% static 'img/combination.svg' %}" alt="combination">
+                                    </div>
+                                </a>
+                                <a href="#" class="submenu_item">
+                                    <div class="submenu_item__title">
+                                        Промокоды на <br/>
+                                        софт/сайты
+                                    </div>
+                                    <div class="submenu_item__img">
+                                        <img src="{% static 'img/promo.svg' %}" alt="promo">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="nav_item submenu ">
+                            <a role="button" class="nav_item__link">
+                                Эксклюзив
+                            </a>
+                            <div class="submenu_block">
+                                <a href="#" class="submenu_item">
+                                    <div class="submenu_item__title">
+                                        Приватные <br/>
+                                        офферы
+                                    </div>
+                                    <div class="submenu_item__img">
+                                        <img src="{% static 'img/unlock.svg' %}" alt="unlock">
+                                    </div>
+                                </a>
+                                <a href="#" class="submenu_item">
+                                    <div class="submenu_item__title">
+                                        Прямые <br/>
+                                        Рекламодатели
+                                    </div>
+                                    <div class="submenu_item__img">
+                                        <img src="{% static 'img/dialog.svg' %}" alt="dialog">
+                                    </div>
+                                </a>
+                                <a href="#" class="submenu_item">
+                                    <div class="submenu_item__title">
+                                        Помощь с доступом <br/>
+                                        в приватные ПП
+                                    </div>
+                                    <div class="submenu_item__img">
+                                        <img src="{% static 'img/door.svg' %}" alt="door">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="nav_item submenu nav-work-us ">
+                            <a role="button" class="nav_item__link">
+                                Работа с нами
+                            </a>
+                            <div class="submenu_block">
+                                <a href="#" class="submenu_item">
+                                    <div class="submenu_item__title">
+                                        Платная консультация
+                                    </div>
+                                </a>
+                                <a href="#" class="submenu_item">
+                                    <div class="submenu_item__title">
+                                        Услуги агенства
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="site_header__info">
+                    <div class="site_header__work-us work-us">
+                        <div class="work-us_title">
+                            Работа с нами
+                        </div>
+                        <div class="work-us_list">
+                            <a href="#" class="work-us_item">
+                                Платная консультация
+                            </a>
+                            <a href="#" class="work-us_item">
+                                Услуги агенства
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /Header -->
+
+    <!-- Main content -->
+    <main class="site_main">
+
+        <!-- Services -->
+       <section class="sec-services">
+           <div class="container">
+               <div class="sec-services_head">
+                   <div class="sec-services_title">
+                       Товары для <br/>
+                       Арбитража
+                   </div>
+               </div>
+               <div class="sec-services_info services">
+                   <div class="services_list">
+                       <div class="services_card big-card bg-offer">
+                            <div class="services_card__inner">
+                                <div class="services_card__info">
+                                    <div class="services_card__title">
+                                        Приватные офферы
+                                    </div>
+                                    <div class="services_card__description">
+                                        В ассортимент нашего магазина входит доступ к приватным офферам.
+                                        Тебе не придется лить на выжитые офферы, вроде похудалок.
+                                        У нас найдёшь только те офферы,
+                                        которые только зашли на рынок и недоступны обычным байерам
+                                    </div>
+                                </div>
+                                <div class="services_card__action">
+                                    <button class="btn btn--white btn--arrow-black">Смотреть</button>
+                                </div>
+                            </div>
+                       </div>
+                       <div class="services_card bg-union-browser">
+                           <div class="services_card__inner">
+                               <div class="services_card__info">
+                                   <div class="services_card__title">
+                                       Сборка анти-детект
+                                       браузера
+                                   </div>
+                               </div>
+                               <div class="services_card__action">
+                                   <div class="services_card__action">
+                                       <button class="btn btn--white btn--arrow-black">Смотреть</button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="services_card bg-acc-fb">
+                           <div class="services_card__inner">
+                               <div class="services_card__info">
+                                   <div class="services_card__title">
+                                       Аккаунты Facebook
+                                   </div>
+                               </div>
+                               <div class="services_card__action" >
+                                   <div class="services_card__action">
+                                       <button class="btn btn--white btn--arrow-black"><a href={% url 'site1_1' %}>Смотреть</a></button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+        <!-- /Services -->
+
+    </main>
+    <!-- /Main content -->
+</div>
+
+<!-- Scripts -->
+<script src="{% static 'js/script.min.js' %}"></script>
+</body>
+</html>
