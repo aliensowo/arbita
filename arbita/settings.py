@@ -156,8 +156,8 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 #Gmail Configurations
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = '<belinsky.dev@gmail.com'
-EMAIL_HOST_PASSWORD = 'N546823791n'
+EMAIL_HOST_USER = 'admin@gmail.com'
+EMAIL_HOST_PASSWORD = 'admin'
 EMAIL_PORT = 587
 
 # REDIS related settings
