@@ -1,7 +1,7 @@
 export default class Order {
 	
 	constructor() {
-	    this.modalOrders = document.querySelectorAll('.modal-order');
+	    this.modalOrders = document.querySelectorAll('.modal-orders');
 	    
 	    Array.from(this.modalOrders).map((modal) => {
 	    	this.handlerOrder(modal)
@@ -11,7 +11,7 @@ export default class Order {
 	handlerOrder(modal) {
 		
 		const modalCurrent = modal;
-		const buyBtns = Array.from(modal.querySelectorAll('.order-product_btn'));
+		const buyBtns = Array.from(modal.querySelectorAll('.orders-product_btn'));
 		
 		this.handlerSteps(modalCurrent);
 		
@@ -24,7 +24,7 @@ export default class Order {
 	
 	handlerSteps(modal, step = 1) {
 		const steps = modal.querySelector('.modal_steps');
-		const orderSteps = Array.from(modal.querySelectorAll('.order-step'));
+		const orderSteps = Array.from(modal.querySelectorAll('.orders-step'));
 		
 		if(steps) {
 			const stepNumber = steps.querySelector('.modal_steps__number');
@@ -34,7 +34,7 @@ export default class Order {
 			
 			stepValues.map((index) => {
 				
-				if(Number(index.getAttribute('data-order-step')) <= step) {
+				if(Number(index.getAttribute('data-orders-step')) <= step) {
 					index.classList.add('is-active');
 				}
 			})
@@ -43,7 +43,7 @@ export default class Order {
 		if(orderSteps) {
 			
 			orderSteps.map((index) => {
-				const orderStep  = Number(index.getAttribute('data-order-step'));
+				const orderStep  = Number(index.getAttribute('data-orders-step'));
 				
 				if(orderStep === step) {
 					index.classList.add('is-active');
@@ -55,8 +55,8 @@ export default class Order {
 	}
 	
 	handlerBtn(btn) {
-		const stepNumber = Number(btn.closest('.order-step').getAttribute('data-order-step'));
-		const modal = btn.closest('.modal-order');
+		const stepNumber = Number(btn.closest('.orders-step').getAttribute('data-orders-step'));
+		const modal = btn.closest('.modal-orders');
 		this.handlerSteps(modal, stepNumber + 1);
 	}
 }

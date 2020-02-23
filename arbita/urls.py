@@ -20,5 +20,6 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('orders.urls')),
     path('', include('shop.urls', namespace="index_site")),
 ]+ static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS)
