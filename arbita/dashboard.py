@@ -38,10 +38,26 @@ class CustomIndexDashboard(Dashboard):
             ]
         ))
 
+        self.children.append((modules.Group(
+            title=u"Товары",
+            display="tabs",
+            children=[
+
+                modules.ModelList(
+                    title=u"Категории",
+                    models=(
+                        'shop.models.category',
+                    )
+                ),
+
+            ]
+        )
+        ))
+
         # append a recent actions module
         self.children.append(modules.RecentActions(
             title='Последние действия',
-            limit=5
+            limit=15
         ))
 
 

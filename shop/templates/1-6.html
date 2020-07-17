@@ -38,198 +38,37 @@
                     </div>
                     <div class="sec-catalog_products products">
                         <div class="products_list">
-                            <div class="products_card">
-                                <div class="products_card__img">
-                                    <img src="http://via.placeholder.com/180x190" alt="product">
-                                </div>
-                                <div class="products_card__info">
-                                    <div class="products_card__title">
-                                        Оффер
+                            {% for category in categories %}
+                                {% for product in products %}
+                                    {% if product.category == category %}
+                                        <div class="products_card">
+                                    <div class="products_card__img">
+                                        <img src="{{product.img}}" alt="product">
                                     </div>
-                                    <div class="products_card__description">
-                                        Вообще я принципиально не хотел писать тз,
-                                        что бы у каждого была свобода действий,
-                                        что в дизайне, что
-                                        в текстах, что в структуре сайта,
-                                        потому что я думаю что стандартный принцип работы магазина
-                                        и его структура понятна всем, и если накидаю ее макет,
-                                        то вы там не увидите ничего нового или экспериментального
+                                    <div class="products_card__info">
+                                        <div class="products_card__title">
+                                            {{ product.name }}
+                                        </div>
+                                        <div class="products_card__description">
+                                            Вообще я принципиально не хотел писать тз,
+                                            что бы у каждого была свобода действий,
+                                            что в дизайне, что
+                                            в текстах, что в структуре сайта,
+                                            потому что я думаю что стандартный принцип работы магазина
+                                            и его структура понятна всем, и если накидаю ее макет,
+                                            то вы там не увидите ничего нового или экспериментального
+                                        </div>
+                                        <div class="products_card__action">
+                                            <a href="#" class="btn btn--blue modal-link" data-modal="modal-offer">
+                                                Текст
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="products_card__action">
-                                        <a href="#" class="btn btn--blue modal-link" data-modal="modal-offer">
-                                            Текст
-                                        </a>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="products_card">
-                                <div class="products_card__img">
-                                    <img src="http://via.placeholder.com/180x190" alt="product">
-                                </div>
-                                <div class="products_card__info">
-                                    <div class="products_card__title">
-                                        Оффер
-                                    </div>
-                                    <div class="products_card__description">
-                                        Вообще я принципиально не хотел писать тз,
-                                        что бы у каждого была свобода действий,
-                                        что в дизайне, что
-                                        в текстах, что в структуре сайта,
-                                        потому что я думаю что стандартный принцип работы магазина
-                                        и его структура понятна всем, и если накидаю ее макет,
-                                        то вы там не увидите ничего нового или экспериментального
-                                    </div>
-                                    <div class="products_card__action">
-                                        <a href="#" class="btn btn--blue modal-link" data-modal="modal-offer">
-                                            Текст
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="products_card">
-                                <div class="products_card__img">
-                                    <img src="http://via.placeholder.com/180x190" alt="product">
-                                </div>
-                                <div class="products_card__info">
-                                    <div class="products_card__title">
-                                        Оффер
-                                    </div>
-                                    <div class="products_card__description">
-                                        Вообще я принципиально не хотел писать тз,
-                                        что бы у каждого была свобода действий,
-                                        что в дизайне, что
-                                        в текстах, что в структуре сайта,
-                                        потому что я думаю что стандартный принцип работы магазина
-                                        и его структура понятна всем, и если накидаю ее макет,
-                                        то вы там не увидите ничего нового или экспериментального
-                                    </div>
-                                    <div class="products_card__action">
-                                        <a href="#" class="btn btn--blue modal-link" data-modal="modal-offer">
-                                            Текст
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="products_card">
-                                <div class="products_card__img">
-                                    <img src="http://via.placeholder.com/180x190" alt="product">
-                                </div>
-                                <div class="products_card__info">
-                                    <div class="products_card__title">
-                                        Оффер
-                                    </div>
-                                    <div class="products_card__description">
-                                        Вообще я принципиально не хотел писать тз,
-                                        что бы у каждого была свобода действий,
-                                        что в дизайне, что
-                                        в текстах, что в структуре сайта,
-                                        потому что я думаю что стандартный принцип работы магазина
-                                        и его структура понятна всем, и если накидаю ее макет,
-                                        то вы там не увидите ничего нового или экспериментального
-                                    </div>
-                                    <div class="products_card__action">
-                                        <a href="#" class="btn btn--blue modal-link" data-modal="modal-offer">
-                                            Текст
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="products_card">
-                                <div class="products_card__img">
-                                    <img src="http://via.placeholder.com/180x190" alt="product">
-                                </div>
-                                <div class="products_card__info">
-                                    <div class="products_card__title">
-                                        Оффер
-                                    </div>
-                                    <div class="products_card__description">
-                                        Вообще я принципиально не хотел писать тз,
-                                        что бы у каждого была свобода действий,
-                                        что в дизайне, что
-                                        в текстах, что в структуре сайта,
-                                        потому что я думаю что стандартный принцип работы магазина
-                                        и его структура понятна всем, и если накидаю ее макет,
-                                        то вы там не увидите ничего нового или экспериментального
-                                    </div>
-                                    <div class="products_card__action">
-                                        <a href="#" class="btn btn--blue modal-link" data-modal="modal-offer">
-                                            Текст
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="products_card">
-                                <div class="products_card__img">
-                                    <img src="http://via.placeholder.com/180x190" alt="product">
-                                </div>
-                                <div class="products_card__info">
-                                    <div class="products_card__title">
-                                        Оффер
-                                    </div>
-                                    <div class="products_card__description">
-                                        Вообще я принципиально не хотел писать тз,
-                                        что бы у каждого была свобода действий,
-                                        что в дизайне, что
-                                        в текстах, что в структуре сайта,
-                                        потому что я думаю что стандартный принцип работы магазина
-                                        и его структура понятна всем, и если накидаю ее макет,
-                                        то вы там не увидите ничего нового или экспериментального
-                                    </div>
-                                    <div class="products_card__action">
-                                        <a href="#" class="btn btn--blue modal-link" data-modal="modal-offer">
-                                            Текст
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="products_card">
-                                <div class="products_card__img">
-                                    <img src="http://via.placeholder.com/180x190" alt="product">
-                                </div>
-                                <div class="products_card__info">
-                                    <div class="products_card__title">
-                                        Оффер
-                                    </div>
-                                    <div class="products_card__description">
-                                        Вообще я принципиально не хотел писать тз,
-                                        что бы у каждого была свобода действий,
-                                        что в дизайне, что
-                                        в текстах, что в структуре сайта,
-                                        потому что я думаю что стандартный принцип работы магазина
-                                        и его структура понятна всем, и если накидаю ее макет,
-                                        то вы там не увидите ничего нового или экспериментального
-                                    </div>
-                                    <div class="products_card__action">
-                                        <a href="#" class="btn btn--blue modal-link" data-modal="modal-offer">
-                                            Текст
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="products_card">
-                                <div class="products_card__img">
-                                    <img src="http://via.placeholder.com/180x190" alt="product">
-                                </div>
-                                <div class="products_card__info">
-                                    <div class="products_card__title">
-                                        Оффер
-                                    </div>
-                                    <div class="products_card__description">
-                                        Вообще я принципиально не хотел писать тз,
-                                        что бы у каждого была свобода действий,
-                                        что в дизайне, что
-                                        в текстах, что в структуре сайта,
-                                        потому что я думаю что стандартный принцип работы магазина
-                                        и его структура понятна всем, и если накидаю ее макет,
-                                        то вы там не увидите ничего нового или экспериментального
-                                    </div>
-                                    <div class="products_card__action">
-                                        <a href="#" class="btn btn--blue modal-link" data-modal="modal-offer">
-                                            Текст
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                                                                    {% endif %}
+                                {% endfor %}
+                            {% endfor %}
+
                         </div>
                     </div>
                 </div>
@@ -241,7 +80,9 @@
     <!-- /Main content -->
 
 </div>
-
+                            {% for category in categories %}
+                                {% for product in products %}
+                                    {% if product.category == category %}
 <div class="modal modal-order" id="modal-offer">
     <div class="modal_inner">
         <a role="button" class="modal_close">
@@ -263,7 +104,7 @@
                     <div class="order-product_inner">
                         <div class="order-product_left">
                             <div class="order-product_title">
-                                Оффер
+                                Оффер {{ product.name }}
                             </div>
                             <div class="order-product_description">
                                 Вообще я принципиально не хотел писать тз, что бы у каждого была свобода действий,
@@ -305,7 +146,7 @@
                                     Цена:
                                 </div>
                                 <div class="order-product_price__value">
-                                    1'500руб
+                                    {{ product.price }}руб
                                 </div>
                             </div>
                             <div class="order-product_action">
@@ -314,82 +155,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="order-data order-step" data-order-step="2">
-                    <div class="order-data_form form">
-                        <div class="order-data_item">
-                            <div class="order-data_item__title">
-                                Способ оплаты
-                            </div>
-                            <div class="order-data_item__info">
-                                <label class="form_radio">
-                                    <input type="radio" name="payment-type-product1" class="form_radio__input" checked>
-                                    <span class="form_radio__value"></span>
-                                    <span class="form_radio__title">Банковская карта</span>
-                                </label>
-                                <label class="form_radio">
-                                    <input type="radio" name="payment-type-product1" class="form_radio__input">
-                                    <span class="form_radio__value"></span>
-                                    <span class="form_radio__title">Яндекс.Деньги</span>
-                                </label>
-                                <label class="form_radio">
-                                    <input type="radio" name="payment-type-product1" class="form_radio__input">
-                                    <span class="form_radio__value"></span>
-                                    <span class="form_radio__title">Вариант 3</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="order-data_item">
-                            <div class="order-data_item__title">
-                                Данные карты
-                            </div>
-                        </div>
-                        <div class="order-data_action">
-                            <button class="order-product_btn btn btn--blue btn--arrow">
-                                Подтвердить покупку
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="order-success order-step" data-order-step="3">
-                    <div class="order-success_inner">
-                        <div class="order-success_info">
-                            <div class="order-success_title">
-                                Успешная покупка!
-                            </div>
-                            <div class="order-success_description">
-                                Вообще я принципиально не хотел писать тз,
-                                что бы у каждого была свобода действий,
-                                что в дизайне, что в текстах, что в структуре сайта,
-                                потому что я думаю что стандартный принцип работы магазина и его структура понятна
-                            </div>
-                        </div>
-                        <div class="order-success_check">
-                            <img src="{% static '/img/check.svg' %}" alt="check">
-                        </div>
-                    </div>
-                    <div class="order-success_products">
-                        <div class="order-success_products__title">
-                            Посмотрите, что еще у нас есть:
-                        </div>
-                        <div class="order-success_products__slider success-slider">
-                            <div class="success-slider_slider">
-                                <div class="success-slider_slide">
-                                    <img src="http://via.placeholder.com/450x155" alt="product">
-                                </div>
-                                <div class="success-slider_slide">
-                                    <img src="http://via.placeholder.com/450x155" alt="product">
-                                </div>
-                                <div class="success-slider_slide">
-                                    <img src="http://via.placeholder.com/450x155" alt="product">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    {% include 'buy/step2.html' %}
+                    {% include 'buy/step3.html' %}
             </div>
         </div>
     </div>
 </div>
+
+{% endif %}
+{% endfor %}
+{% endfor %}
 
 <!-- Scripts -->
 <script src="{% static '/js/script.min.js' %}"></script>
