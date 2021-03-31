@@ -52,7 +52,7 @@ idna==2.9
 importlib-metadata==1.5.0
 jdcal==1.4.1
 kombu==4.6.7
-lxml==4.5.0
+lxml==4.6.3
 openpyxl==2.4.9
 Pillow==7.0.0
 premailer==3.6.1
